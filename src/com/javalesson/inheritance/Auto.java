@@ -3,15 +3,15 @@ package com.javalesson.inheritance;
 public class Auto {
     private String producer;
     private String model;
-    private Engine engineType;
+    private Engine engine;
     private int currentSpeed;
     protected boolean isRunning;
 
-    // constructor to initialize producer; model; engineType fields
-    public Auto(String producer, String model, EngineType engineType) {
+    // constructor to initialize producer; model; engine fields
+    public Auto(String producer, String model, Engine engine) {
         this.producer = producer;
         this.model = model;
-        this.engineType = engineType;
+        this.engine = engine;
         System.out.println("Auto was initialized");
     }
 
@@ -42,9 +42,6 @@ public class Auto {
         return model;
     }
 
-    public EngineType getEngineType() {
-        return engineType;
-    }
 
     public int getCurrentSpeed() {
         return currentSpeed;
@@ -52,5 +49,9 @@ public class Auto {
 
     public boolean isRunning() {
         return isRunning;
+    }
+
+    public Engine getEngine() {
+        return engine;
     }
 }

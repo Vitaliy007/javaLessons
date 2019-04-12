@@ -3,8 +3,8 @@ package com.javalesson.inheritance;
 public class Bus extends FuelAuto {
     private int passengerNumber;
 
-    public Bus(String producer, String model, EngineType engineType, int availiblePetrol, int tankVolume, int passengerNumber) {
-        super(producer, model, engineType, availiblePetrol, tankVolume);
+    public Bus(String producer, String model, Engine engine, int availiblePetrol, int tankVolume, int passengerNumber) {
+        super(producer, model, engine, availiblePetrol, tankVolume);
         this.passengerNumber = passengerNumber;
     }
 

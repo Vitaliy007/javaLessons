@@ -9,10 +9,30 @@ public class Engine {
     private int power;
     private List<Piston> pistons = new ArrayList<>();
 
+    public Engine() {
+    }
+
     public Engine(double volume, EngineType engineType, int power) {
         this.volume = volume;
         this.engineType = engineType;
         this.power = power;
-        this.pistons = pistons;
+        for(int i=1; i<=5; i++)
+        this.pistons.add(new Piston(0.3, i));
+    }
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public EngineType getEngineType() {
+        return engineType;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public List<Piston> getPistons() {
+        return pistons;
     }
 }

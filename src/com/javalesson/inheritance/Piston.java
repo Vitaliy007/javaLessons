@@ -10,6 +10,14 @@ public class Piston {
     }
 
     public void movePiston(){
-        System.out.println();
+        System.out.println("Piston #"+ pistonNumber + "is moving");
+    }
+
+    @Override
+    public String toString() {
+        return "Piston{" +
+                "volume=" + volume +
+                ", pistonNumber=" + pistonNumber +
+                '}';
     }
 }
