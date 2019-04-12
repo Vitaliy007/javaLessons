@@ -1,6 +1,6 @@
 package com.javalesson.inheritance;
 
-public class FuelAuto extends Auto {
+public abstract class FuelAuto extends Auto {
     private int availiblePetrol;
     private int tankVolume;
 
@@ -14,6 +14,8 @@ public class FuelAuto extends Auto {
         availiblePetrol+=petrolVolume;
         System.out.println("Adding fuel");
     }
+
+
 
     public int getAvailiblePetrol() {
         return availiblePetrol;
